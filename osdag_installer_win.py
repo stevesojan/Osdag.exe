@@ -17,7 +17,7 @@ def install_miniconda():
         installer_url = "https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe"
         installer_name = "Miniconda3-latest-Windows-x86_64.exe"
     
-    # Check if the installer is already downloaded
+
     
         print("Downloading the latest Miniconda installer...")
         response = requests.get(installer_url, stream=True)
