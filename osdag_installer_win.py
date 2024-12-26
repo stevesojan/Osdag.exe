@@ -32,6 +32,21 @@ def install_miniconda():
         print("Miniconda Installed Successfully")
     else:
         print("Miniconda is already installed.")
+        
+        
+def install_tinytex():
+    try:
+        subprocess.run('TinyTex\install-bin-windows.bat', check = True, shell = True )
+        print('TinyTex Installed Succesfully, Now installing required additional packages...')
+    except subprocess.calledProcessError as e:
+        print(f"An error occurred - {e}")
+        
+    try:
+        subprocess.run(['tlmgr','install','lastpage','parskip','needspace','fancyhdr','colortbl','multirow'], check = True)
+        print("Required Packages Installed Successfully")
+    except subprocess.calledProcessError as e:
+        print(f"An error occurred{e}")
+        
 
 def create_conda_env():
     print("Creating Conda environment...")
