@@ -7,7 +7,6 @@ Created on Sat Dec 21 08:57:06 2024
 
 import os
 import subprocess
-import sys
 import requests
 
 def install_miniconda():
@@ -39,32 +38,34 @@ def install_tinytex():
         subprocess.run('TinyTex\install-bin-windows.bat', check = True, shell = True )
         print('TinyTex Installed Succesfully, Now installing required additional packages...')
     except subprocess.calledProcessError as e:
-        print(f"An error occurred - {e}")
+        print(f"An error occurred while installing TinyTex- {e}")
         
     try:
         subprocess.run(['tlmgr','install','lastpage','parskip','needspace','fancyhdr','colortbl','multirow'], check = True)
         print("Required Packages Installed Successfully")
     except subprocess.calledProcessError as e:
-        print(f"An error occurred{e}")
+        print(f"An error occurred while installing additional packages of TinyTex: {e}")
         
 
 def create_conda_env():
     print("Creating Conda environment...")
-    subprocess.run(["conda", "create", "-n", "osdag_env", "python=3.8", "-y"], shell=True)
-    subprocess.run(["conda", "activate", "osdag_env"], shell=True)
+    try:
+        subprocess.run(["conda", "create", "-n", "osdag-env", "osdag::osdag", "-c", "conda-forge"], shell=True)
+        print("Osdag was installed successfully")
+    except subprocess.CalledProcessError as e:
+        print(f"Encountered an error while creating conda env or installing osdag: {e}")
+        
 
-def install_dependencies():
-    print("Installing Python dependencies...")
-    subprocess.run(["pip", "install", "-r", "requirements.txt"], shell=True)
 
 def main():
     try:
         install_miniconda()
-        create_conda_env()
-        install_dependencies()
+        install_tinytex()
+        create_conda_env() 
         print("Installation completed successfully.")
     except Exception as e:
         print(f"Installation failed: {e}")
 
 if __name__ == "__main__":
+#makes sure code runs directly from this script and not some external func
     main()
