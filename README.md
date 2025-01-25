@@ -1,9 +1,6 @@
-# Osdag README.md
+# Osdag.exe
 
-
-## Installation
-
-### When osdag_win_installer.exe is downloaded
+### Frame & Components
 
 The installation script is essentially written in Python and has 3 main components (helper functions). The user must have an active internet connection during installation.
 
@@ -49,7 +46,7 @@ All generated PDFs can be found in the ‘All Design Trials’ folder within the
 
 ## NOTE
 
-When generating a PDF of a design within Osdag that is unsafe or not following the standard protocol of the design (in many manners such as material, section, etc.), even if the PDF is generated successfully in the location set by the user, it results in a dialog box that says “Latex Creation Error”.
+When generating a PDF of a design within Osdag that is unsafe or not following the standard protocol of the design (in any manners such as material, section, etc.), even if the PDF is generated successfully in the location set by the user, it results in a dialog box that says “Latex Creation Error”.
 
 ## Ambiguities & Steps Taken to Resolve
 
