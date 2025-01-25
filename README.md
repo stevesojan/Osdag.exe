@@ -2,6 +2,7 @@
 
 ### Frame & Components
 
+Make sure the .exe setup file is run from the primary storage of the cmputer and not from a secondary storage device, like a pendrive, external hdd/ssd.
 The installation script is essentially written in Python and has 3 main components (helper functions). The user must have an active internet connection during installation.
 
 1. **TinyTeX Installation**  
