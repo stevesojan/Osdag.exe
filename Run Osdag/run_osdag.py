@@ -9,7 +9,7 @@ import subprocess
 
 def run_osdag():
     try:
-        subprocess.run(r"run_osdag.bat", check =True)
+        subprocess.run("call conda activate osdag-env && osdag", check =True, shell = True)
     except subprocess.CalledProcessError as e:
         print(f"An error occurred: {e}")
     
