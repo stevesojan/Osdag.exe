@@ -47,7 +47,9 @@ All generated PDFs can be found in the ‘All Design Trials’ folder within the
 
 ## NOTE
 
-When generating a PDF of a design within Osdag that is unsafe or not following the standard protocol of the design (in any manners such as material, section, etc.), even if the PDF is generated successfully in the location set by the user, it results in a dialog box that says “Latex Creation Error”.
+When generating a PDF of a design within Osdag that is unsafe or not following the standard protocol of the design (in any manners such as material, section, etc.), it was noticed that generally for these cases it results in a dialog box that says “Latex Creation Error” but the PDF was generated successfully in the location set by the user.
+
+Though less likely, there were instances where clicking on Create Design Report, for a safe design in Osdag to generate a pdf report resulted in a dialog box which said 'Latex Creation Error', but the file was successfully generated in the location set by the user.
 
 ## Ambiguities & Steps Taken to Resolve
 
