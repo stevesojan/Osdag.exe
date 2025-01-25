@@ -6,7 +6,7 @@ Make sure the .exe setup file is run from the primary storage of the computer an
 The installation script is essentially written in Python and has 3 main components (helper functions). The user must have an active internet connection during installation.
 
 1. **TinyTeX Installation**  
-   Firstly, the installer installs TinyTeX, a lightweight alternative to MikTeX, which already consists of most of the required packages for Osdag (to generate PDF reports). The packages which are not inherently present with TinyTeX are installed programmatically. TinyTeX is also fetched from its GitHub release, making the installer future-proof for this component too.
+   Firstly, the installer installs TinyTeX, a lightweight alternative to MikTeX, which already consists of most of the required packages for Osdag (to generate PDF reports). The necessary packages which are not inherently present with TinyTeX are installed programmatically. TinyTeX is also fetched from its GitHub release, making the installer future-proof for this component too.
 
 2. **Miniconda Installation**  
    Second, it installs Miniconda in the user’s computer only for the current user. The function has been designed to always download the latest version of Miniconda3 from the official link of the releases. By doing so, the installer always remains future-proof, no matter when it is used.
