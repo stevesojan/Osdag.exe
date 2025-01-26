@@ -7,6 +7,8 @@ The installer setup file is: osdag_installer_win64.exe within this repo which yo
 Make sure the .exe setup file is run from the primary storage of the computer and not from a secondary storage device, like a pendrive, external hdd/ssd.
 The installation script is essentially written in Python and has 3 main components (helper functions). The user must have an active internet connection during installation.
 
+On a PC with a stable internet connection with medium speed(10-50mbps), the full installation takes about 10-15 mins.
+
 1. **TinyTeX Installation**  
    Firstly, the installer installs TinyTeX, a lightweight alternative to MikTeX, which already consists of most of the required packages for Osdag (to generate PDF reports). The necessary packages which are not inherently present with TinyTeX are installed programmatically. TinyTeX is also fetched from its GitHub release, making the installer future-proof for this component too.
 
