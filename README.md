@@ -9,10 +9,12 @@ The installation script is essentially written in Python and has 3 main componen
 
 1. **TinyTeX Installation**  
    Firstly, the installer installs TinyTeX, a lightweight alternative to MikTeX, which already consists of most of the required packages for Osdag (to generate PDF reports). The necessary packages which are not inherently present with TinyTeX are installed programmatically. TinyTeX is also fetched from its GitHub release, making the installer future-proof for this component too.
+
    TinyTex Release: https://github.com/rstudio/tinytex-releases/releases/
 
 3. **Miniconda Installation**  
    Second, it installs Miniconda in the user’s computer only for the current user. The function has been designed to always download the latest version of Miniconda3 from the official link of the releases. By doing so, the installer always remains future-proof, no matter when it is used.
+
    Miniconda Release: https://repo.anaconda.com/miniconda/
 
 5. **Osdag Installation**  
