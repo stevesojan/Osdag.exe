@@ -17,7 +17,7 @@ The installation script is essentially written in Python and has 3 main componen
 
 5. **Osdag Installation**  
    After TinyTeX with its packages and Miniconda are configured, the installer creates a conda environment and installs Osdag, using
-   'conda activate && conda create -n osdag-env osdag::osdag -c conda-forge'
+   `conda activate && conda create -n osdag-env osdag::osdag -c conda-forge`
 
 ## Working
 
