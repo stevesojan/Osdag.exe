@@ -25,7 +25,7 @@ The installation script is essentially written in Python and has 3 main componen
 
 1. The script downloads the latest version of Miniconda and installs it in the `{Userprofile}` directory. It also adds conda to the system path.
 
-2. The TinyTeX installation, conducted using the `install_tinytex()` function in the source file, consists of 3 methods as fallback mechanisms in case of a failure of any one:
+2. The TinyTeX installation, conducted using the `install_tinytex()` function in the tinytex_prog_logic.exe file, consists of 3 methods as fallback mechanisms in case of a failure of any one:
 
    - **System.Net.WebClient**
    - **Invoke-WebRequest**
