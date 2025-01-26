@@ -32,7 +32,7 @@ The installation script is essentially written in Python and has 3 main componen
    - **System.Net.Http.HttpClient**
 
    The logic was derived from the `install_bin_windows.bat` file available on the official TinyTeX release website (Included in this repo).  
-   It extracts the TinyTeX files to `Appdata/Roaming/TinyTeX` and adds `tlmgr` to the system path. The script runs TinyTeX installation in a different shell so that the path is added globally for all instances. After that, when the user clicks on Finish, Miniconda and Osdag are installed.
+   It extracts the TinyTeX files to `Appdata/Roaming/TinyTeX` and adds `tlmgr` to the system path. The script runs TinyTeX installation in a separate shell so that the path is added globally for all instances. After that, when the user clicks on Finish, Miniconda and Osdag are installed.
 
 3. **Osdag Installation**  
    Osdag is installed as a conda environment through the initially installed Miniconda3 `conda.bat` file. The installer is again future-proof. In the event of future updates of Osdag, new users will be able to install the latest version, and prior users can either update using the command line or a new feature can be integrated to automatically check for updates and install the latest version.
