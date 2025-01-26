@@ -3,6 +3,7 @@
 ### Frame & Components
 
 The installer setup file is: osdag_installer_win64.exe within this repo which you'll find at Output/osdag_installer_win64.exe.
+
 Make sure the .exe setup file is run from the primary storage of the computer and not from a secondary storage device, like a pendrive, external hdd/ssd.
 The installation script is essentially written in Python and has 3 main components (helper functions). The user must have an active internet connection during installation.
 
