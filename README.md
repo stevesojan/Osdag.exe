@@ -53,7 +53,7 @@ Though less likely, there were instances where clicking on Create Design Report,
 
 ## Ambiguities & Steps Taken to Resolve
 
-In the event of running the installer on public WiFi networks with their own security features or restrictions enabled (e.g., University/College WiFi networks), the installer might fail to install Osdag through the conda channel on the first attempt but may install successfully on successive attempts. This is a specific occurrence only on public networks with high traffic and restrictions enabled.
+In the event of running the installer on WiFi networks with their own security features or restrictions enabled (e.g., University/College WiFi networks), the installer might fail to install Osdag through the conda channel on the first attempt but may install successfully on successive attempts. This is a specific occurrence only on public networks with high traffic and restrictions enabled.
 
 To resolve this, the installer will try to install Osdag in a loop for 10 attempts until `success = True`.
 
