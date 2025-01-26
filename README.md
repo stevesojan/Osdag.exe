@@ -2,6 +2,10 @@
 
 ### Frame & Components
 
+
+https://github.com/user-attachments/assets/19b6289e-51ee-4605-bb3f-35a3e7b2644
+
+
 The installer setup file is: osdag_installer_win64.exe within this repo which you'll find at Output/osdag_installer_win64.exe.
 
 Make sure the .exe setup file is run from the primary storage of the computer and not from a secondary storage device, like a pendrive, external hdd/ssd.
